@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unit Converter"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Measure Type"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        />
+
+    <Spinner
+        android:layout_marginStart="10dp"
+        android:id="@+id/main_sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/measue_unit"
+        />
+
+<RelativeLayout
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/quant1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:hint="Enter unit 1"
+        android:textColorHint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:layout_toRightOf="@+id/quant1"
+        android:id="@+id/quant1_type"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter unit 2"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:id="@+id/quant2"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/quant1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        />
+
+    <Spinner
+        android:layout_below="@+id/quant1"
+        android:id="@+id/quant2_type"
+        android:layout_toRightOf="@id/quant2"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        />
+
+
+    <Button
+        android:id="@+id/caculate_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Result"
+        android:layout_below="@id/quant2_type"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>
+
+</LinearLayout>

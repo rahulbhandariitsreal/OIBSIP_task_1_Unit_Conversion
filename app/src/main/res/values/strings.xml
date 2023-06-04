@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UnitConverter Application</string>
+
+    <string-array name="measue_unit">
+        <item> Volume </item>
+        <item> Length </item>
+        <item> Mass </item>
+    </string-array>
+</resources>
